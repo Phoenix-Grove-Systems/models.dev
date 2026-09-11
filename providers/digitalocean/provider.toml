@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — automatic prefix caching for open models, Anthropic cache_control, OpenAI prompt_cache_retention; no prompt_cache_key field.
+# Cache key (chat): strip prompt_cache_key — chat API documents cache_control with 5m/1h ttl for Anthropic models and prompt_cache_retention in_memory/24h for OpenAI models, with no prompt_cache_key field.
+# Cache headers: X-Model-Affinity — pin multi-turn turns to one model for cache reuse (none opts out); x-routing-max-switch-spend-pct — cap cache-aware model switching.
+# Cache policy: open models cache automatically on exact token-prefix match; Anthropic models cache automatically via router or manual ephemeral cache_control; OpenAI models need 1024+ tokens plus prompt_cache_retention; reuse a stable X-Model-Affinity across turns.
 # Docs: https://docs.digitalocean.com/products/inference/how-to/use-prompt-caching/
 name = "DigitalOcean"
 env = ["DIGITALOCEAN_ACCESS_TOKEN"]

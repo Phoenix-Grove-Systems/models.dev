@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible API, no documented cache control.
+# Cache key (chat): strip prompt_cache_key — OpenAI-compatible POST /v1/chat/completions; request docs list no cache field.
+# Cache headers: none
+# Cache policy: no documented path to a cache hit — the API exposes no prefix-cache behavior.
 # Docs: https://dinference.com/docs
 name = "DInference"
 env = ["DINFERENCE_API_KEY"]

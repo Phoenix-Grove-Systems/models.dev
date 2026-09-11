@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible gateway, no documented cache control; usage reports cached_tokens.
+# Cache key (chat): strip prompt_cache_key — OpenAI-compatible gateway with chat/responses/messages surfaces; docs define no cache request field, usage only reports cached_tokens passthrough.
+# Cache headers: none
+# Cache policy: no gateway cache to hit; cached_tokens reflects the backing provider only, so send byte-identical prefixes to let upstream prefix caches match.
 # Docs: https://www.crossmodel.ai/docs/api-reference/chat
 # CrossModel is a multi-provider gateway with three inbound surfaces: OpenAI
 # Chat Completions (/v1/chat/completions), OpenAI Responses (/v1/responses), and

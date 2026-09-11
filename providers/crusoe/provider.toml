@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — automatic server-side prefix caching via MemoryAlloy cache-aware routing; no prompt_cache_key field.
+# Cache key (chat): strip prompt_cache_key — OpenAI-compatible chat API; caching is automatic MemoryAlloy cache-aware routing with no request cache field.
+# Cache headers: none
+# Cache policy: automatic — MemoryAlloy cluster-wide memory fabric routes repeat prefixes to warm nodes; resend identical prefixes on the same model to hit.
 # Docs: https://docs.crusoecloud.com/serverless-inference/overview
 name = "Crusoe"
 env = ["CRUSOE_API_KEY"]

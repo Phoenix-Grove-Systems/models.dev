@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — explicit prompt_cache_key plus automatic prefix caching with prompt_cache_retention.
+# Cache key (chat): send prompt_cache_key — docs define top-level prompt_cache_key string sharing KV cache per key plus model plus account, with prompt_cache_retention via prompt_cache_options for 5-minute or 1-hour retention.
+# Cache headers: none
+# Cache policy: automatic prefix match; boost hits with a session-scoped prompt_cache_key on the same model, stable content first and byte-identical; usage reports prompt_tokens_details.cached_tokens.
 # Docs: https://docs.deepinfra.com/chat/prompt-caching
 # Reasoning HTTP format (accessed 2026-06-25):
 # OpenAI Chat: POST https://api.deepinfra.com/v1/openai/chat/completions

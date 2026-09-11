@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — narrow OpenAI-compatible text API, no documented cache control; usage carries no cache fields.
+# Cache key (chat): strip prompt_cache_key — OpenAI-compatible text API; docs define no cache field and usage carries no cache fields.
+# Cache headers: none
+# Cache policy: no documented path to a cache hit — the API exposes no prefix-cache behavior.
 # Docs: https://echo.tracerml.ai/docs/api
 name = "Echo"
 env = ["ECHO_API_KEY"]
