@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — automatic prefix/KV cache, no key required; usage.cached_tokens plus optional prompt_cache_key.
+# Docs: https://dev.meta.ai/docs/prompt-caching
 # POST /compat/v1/chat/completions follows Meta's published Chat request
 # schema, which lists no toggle, effort, or reasoning-token-budget field.
 # https://llama.developer.meta.com/docs/api-reference/chat-completions (accessed 2026-06-25)

@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible passthrough to upstream; per-model cached rates billed, no gateway cache controls.
+# Docs: https://kilo.ai/docs/gateway
 name = "Kilo Gateway"
 env = ["KILO_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

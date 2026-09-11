@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — gateway-level caching (byte-identical $0 gateway cache plus provider cache-control translation/injection), not chat params.
+# Docs: https://docs.llmgateway.io/features/caching
 # POST /v1/chat/completions accepts $.reasoning_effort = none|minimal|low|
 # medium|high|xhigh|max. Its raw schema lists $.reasoning.effort = low|medium|
 # high; the two effort paths are mutually exclusive. $.reasoning.max_tokens

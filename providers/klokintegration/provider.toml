@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible passthrough; no cache controls or cached pricing documented.
+# Docs: https://klokintegration.se/docs/ai-api
 name = "klokintegration.se"
 npm = "@ai-sdk/openai-compatible"
 env = ["KLOKINTEGRATION_API_KEY"]

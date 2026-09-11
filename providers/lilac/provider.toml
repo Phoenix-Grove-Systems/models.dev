@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — automatic prefix cache; repeated prefixes billed at the published cache-read rate.
+# Docs: https://docs.getlilac.com/inference/pricing
 # POST /v1/chat/completions carries model-template controls under
 # $.chat_template_kwargs; keys and values are model-specific, not universal.
 # https://docs.getlilac.com/inference/chat-completions (accessed 2026-06-25)

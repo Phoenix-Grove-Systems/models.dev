@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — automatic prompt caching in 1584-token blocks; cached prefixes billed at the cached-input rate.
+# Docs: https://llmtech.eu/models/qwen3.8-27b
 name = "LLM Tech"
 env = ["LLMTECH_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

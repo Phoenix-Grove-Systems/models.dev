@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — same gateway-level caching as llmgateway (byte-identical $0 cache plus provider cache-control translation); provider-pinned catalog.
+# Docs: https://docs.llmgateway.io/features/caching
 # The provider-pinned LLM Gateway catalog: one entry per upstream provider
 # mapping, addressed as `provider/model-id` — the format the gateway accepts to
 # pin a request to a specific upstream provider. The aggregated, auto-routed
