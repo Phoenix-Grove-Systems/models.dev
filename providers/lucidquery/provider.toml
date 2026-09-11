@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — chat API publishes no cache params, cached-token usage, or cached-input rates.
+# Docs: https://lucidquery.com/docs
 # POST /v1/chat/completions enables a trace with $.thinking = true; aliases are
 # $.include_reasoning and $.reasoning.enabled = true. The published request
 # schema gives no false value, effort enum, or reasoning-token budget.

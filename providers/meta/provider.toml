@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — automatic prefix caching reported via usage.prompt_tokens_details.cached_tokens, with optional prompt_cache_key.
+# Docs: https://dev.meta.ai/docs/prompt-caching.md
 name = "Meta"
 npm = "@ai-sdk/openai"
 env = ["META_MODEL_API_KEY"]

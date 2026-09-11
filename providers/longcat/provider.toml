@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — server-side prefix caching billed at a discounted cached-input rate.
+# Docs: https://longcat.chat/platform/docs/pricing/longcat-2.0
 name = "LongCat"
 npm = "@ai-sdk/openai-compatible"
 api = "https://api.longcat.chat/openai"
