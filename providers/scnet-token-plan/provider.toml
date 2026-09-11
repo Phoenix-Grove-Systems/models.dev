@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible chat endpoint; no documented cache control.
+# Docs: https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/tools/opencode.html
 # SCNet documents its OpenAI-compatible endpoint and OpenCode integration here:
 # https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/tools/opencode.html
 # Token Plan model catalog (accessed 2026-08-16):

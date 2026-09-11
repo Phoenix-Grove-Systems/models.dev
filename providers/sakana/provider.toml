@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — automatic prefix cache surfaced via cached_tokens usage fields.
+# Docs: https://console.sakana.ai/models
 name = "Sakana AI"
 env = ["SAKANA_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

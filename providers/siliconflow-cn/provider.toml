@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — automatic prefix cache billed at Cache Read (cached input) rates.
+# Docs: https://www.siliconflow.com/blog/siliconflow-prompt-caching-api-costs
 name = "SiliconFlow (China)"
 env = ["SILICONFLOW_CN_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

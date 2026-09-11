@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible gateway; no documented cache control.
+# Docs: https://docs.salad.com/ai-gateway/explanation/overview
 name = "SaladCloud AI Gateway"
 env = ["SALAD_CLOUD_API_KEY"]
 npm = "@saladtechnologies-oss/ai-sdk-provider"

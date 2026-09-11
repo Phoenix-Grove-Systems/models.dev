@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible endpoint; no documented cache control.
+# Docs: https://platform.sensenova.cn/docs
 name = "SenseNova (China)"
 npm = "@ai-sdk/openai-compatible"
 env = ["SENSENOVA_API_KEY"]

@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible endpoint; unsupported fields ignored, no documented cache control.
+# Docs: https://platform.scx.ai/docs/guides/openai-compatibility
 name = "SCX.ai"
 env = ["SCX_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

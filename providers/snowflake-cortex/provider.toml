@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — automatic caching for OpenAI models (1024+ tokens); explicit cache_control for Claude.
+# Docs: https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-rest-api
 name = "Snowflake Cortex"
 npm = "@ai-sdk/openai-compatible"
 api = "https://${SNOWFLAKE_ACCOUNT}.snowflakecomputing.com/api/v2/cortex/v1"

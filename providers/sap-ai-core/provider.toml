@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — orchestration prompt caching; explicit cache_control breakpoints plus implicit caching for OpenAI/Gemini-backed models.
+# Docs: https://help.sap.com/docs/sap-ai-core/generative-ai/prompt-caching
 name = "SAP AI Core"
 env = ["AICORE_SERVICE_KEY"]
 npm = "@jerome-benoit/sap-ai-provider-v2"
