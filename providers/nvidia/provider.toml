@@ -1,4 +1,6 @@
-# Prompt cache (chat): REJECTS — per-model closed NIM schema rejects unknown fields with 400.
+# Cache key (chat): strip prompt_cache_key — per-model NIM `ChatRequest` schema sets `additionalProperties: false` (closed; e.g. meta/llama-3.3-70b-instruct).
+# Cache headers: none
+# Cache policy: no chat cache controls; per-model closed NIM schema, so unknown fields must be stripped.
 # Docs: https://docs.api.nvidia.com/nim/reference/llm-apis
 name = "Nvidia"
 env = ["NVIDIA_API_KEY"]

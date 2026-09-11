@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — automatic engine-level prompt cache on supported models with no request fields; `cached_tokens` in usage.
+# Cache key (chat): send prompt_cache_key — engine cache needs no request modifications; schema carries model-specific extras with no documented unknown-field rejection.
+# Cache headers: none
+# Cache policy: automatic engine-level prompt cache on supported models with no request fields; hits in `usage.prompt_tokens_details.cached_tokens`.
 # Docs: https://novita.ai/docs/guides/llm-prompt-cache.md
 name = "NovitaAI"
 env = ["NOVITA_API_KEY"]

@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — automatic implicit caching with transparent passthrough of caching params; explicit Gemini `cachedContents`.
+# Cache key (chat): send prompt_cache_key — gateway transparently passes through caching-related parameters.
+# Cache headers: none (chat)
+# Cache policy: automatic implicit caching with stable prefixes; `cache_control` body field on the Anthropic Messages route; explicit Gemini caching via `cachedContents`.
 # Docs: https://ofox.ai/docs/develop/advanced/prompt-caching
 name = "Ofox"
 env = ["OFOX_API_KEY"]

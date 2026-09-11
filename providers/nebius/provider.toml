@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — generic chat schema permits additional properties; no explicit chat cache controls, caching is automatic server-side.
+# Cache key (chat): send prompt_cache_key — OpenAPI `ChatCompletionRequest` sets `additionalProperties: true`.
+# Cache headers: none
+# Cache policy: automatic server-side caching with no request cache controls; keep stable prefixes; hits in `usage.prompt_tokens_details.cached_tokens`.
 # Docs: https://docs.tokenfactory.nebius.com/api-reference/inference/create-chat-completion
 name = "Nebius Token Factory"
 env = ["NEBIUS_API_KEY"]

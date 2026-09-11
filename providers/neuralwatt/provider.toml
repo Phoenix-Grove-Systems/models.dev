@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — automatic vLLM prefix cache with no request fields; `cached_tokens` usage billed at discounted reads.
+# Cache key (chat): send prompt_cache_key — no unknown-field rejection documented (400s only for out-of-enum `reasoning_effort` / unsupported `thinking_token_budget`).
+# Cache headers: none
+# Cache policy: automatic vLLM prefix caching with no request fields; hits in `usage.prompt_tokens_details.cached_tokens` at reduced energy cost.
 # Docs: https://portal.neuralwatt.com/docs/api/chat-completions
 name = "Neuralwatt"
 env = ["NEURALWATT_API_KEY"]

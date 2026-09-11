@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — no documented cache fields on chat; cache-read billing applied server-side.
+# Cache key (chat): send prompt_cache_key — OpenAI/Anthropic-compatible router with no documented field rejection (400s only for unknown model names).
+# Cache headers: none
+# Cache policy: no documented chat cache controls; cache-read rates published as a billing ceiling in model costs; keep stable prefixes.
 # Docs: https://neosmith.ai/docs
 name = "NeoSmith"
 

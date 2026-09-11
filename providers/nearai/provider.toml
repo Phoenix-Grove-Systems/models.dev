@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — gateway accepts cache hints without 400 but may silently drop them; automatic prefix reuse on self-hosted routes.
+# Cache key (chat): send prompt_cache_key — automatic engine cache with no API changes required and no documented field rejection.
+# Cache headers: none
+# Cache policy: automatic vLLM/SGLang prefix reuse on TEE-hosted models; keep stable byte-identical prefixes first; hits in `usage.prompt_tokens_details.cached_tokens`.
 # Docs: https://docs.near.ai/cloud/guides/prompt-caching
 name = "NEAR AI Cloud"
 npm = "@ai-sdk/openai-compatible"

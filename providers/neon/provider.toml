@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — unified chat is OpenAI-passthrough with no cache fields; explicit caching lives on the native Anthropic route.
+# Cache key (chat): send prompt_cache_key — unified chat is OpenAI-passthrough; documented 400s cover unknown model/wrong endpoint only, not extra fields.
+# Cache headers: none (chat)
+# Cache policy: no cache fields on unified chat; explicit caching lives on the native Anthropic route via `cache_control` markers (`anthropic-beta`/`anthropic-version` forwarded there).
 # Docs: https://neon.com/docs/ai-gateway/chat-completions
 name = "Neon"
 npm = "@ai-sdk/openai-compatible"

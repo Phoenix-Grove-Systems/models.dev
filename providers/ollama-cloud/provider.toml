@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compat endpoint defines no cache fields and ignores unknown fields; server-side KV reuse is automatic.
+# Cache key (chat): send prompt_cache_key — OpenAI-compat endpoint documents no cache fields and no unknown-field rejection; server ignores unknown JSON fields.
+# Cache headers: none
+# Cache policy: automatic server-side KV reuse with no request cache fields.
 # Docs: https://docs.ollama.com/openai
 name = "Ollama Cloud"
 env = ["OLLAMA_API_KEY"]

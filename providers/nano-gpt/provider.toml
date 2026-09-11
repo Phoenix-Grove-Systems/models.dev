@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — implicit auto-cache plus proprietary top-level `caching` / `prompt_caching` controls on chat.
+# Cache key (chat): send prompt_cache_key — open chat schema accepts proprietary top-level extras (`caching`, `promptCaching`/`prompt_caching`, `stickyprovider`).
+# Cache headers: anthropic-beta, x-prompt-caching-cut-after
+# Cache policy: implicit auto-cache by default; `caching: true` routes to a cache-capable provider; explicit Claude caching via `promptCaching` body helper or inline `cache_control`.
 # Docs: https://docs.nano-gpt.com/api-reference/miscellaneous/prompt-caching
 name = "NanoGPT"
 env = ["NANO_GPT_API_KEY"]

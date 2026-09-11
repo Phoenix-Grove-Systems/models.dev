@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — no documented cache fields on the OpenAI-compatible chat API.
+# Cache key (chat): send prompt_cache_key — OpenAI-compatible chat API with no documented field rejection.
+# Cache headers: none
+# Cache policy: no documented cache controls on the OpenAI-compatible chat API; keep stable prefixes (Bedrock-style `cachePoint` is a different API surface).
 # Docs: https://nova.amazon.com/dev/documentation
 name = "Nova"
 env = ["NOVA_API_KEY"]
