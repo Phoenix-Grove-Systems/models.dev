@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — guide documents cache_control plus implicit prefix cache only, no prompt_cache_key field.
+# Cache headers: none
+# Cache policy: explicit cache_control breakpoints (Claude/Qwen; 1024/2048/256-token minima, 5m TTL, max 4) plus implicit auto prefix cache; stable prefixes first.
+# Docs: https://docs.zenmux.ai/guide/advanced/prompt-cache.html
 # OpenAI POST /api/v1/chat/completions: `reasoning_effort`, or `reasoning`
 # with `effort`, `max_tokens`, and `enabled`.
 # Anthropic POST /api/anthropic/v1/messages: `thinking.type` enabled|disabled;

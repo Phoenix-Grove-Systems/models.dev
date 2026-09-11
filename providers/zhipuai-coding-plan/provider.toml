@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — implicit platform cache shared with coding endpoint, no key param.
+# Cache headers: none
+# Cache policy: implicit context cache via POST /api/coding/paas/v4/chat/completions; Cached Input deduction (e.g. GLM-5.3 Cached 1.7 vs Input 6.9).
+# Docs: https://docs.bigmodel.cn/cn/coding-plan/overview
 # OpenAI Chat endpoint: POST https://open.bigmodel.cn/api/coding/paas/v4/chat/completions.
 # GLM-5.2 maps low|medium|high to high and xhigh|max|ultracode to max.
 # https://docs.bigmodel.cn/cn/coding-plan/latest-model (accessed 2026-06-25)

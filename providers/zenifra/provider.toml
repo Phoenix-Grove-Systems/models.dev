@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — no key field in OpenAI-compatible chat docs; only base_url/api_key/model documented.
+# Cache headers: none
+# Cache policy: no documented chat cache params or cached-token fields; keep stable prefixes for upstream reuse.
+# Docs: https://docs.zenifra.com/en/docs/ai
 name = "Zenifra"
 env = ["ZENIFRA_AI_KEY"]
 npm = "@ai-sdk/openai-compatible"
