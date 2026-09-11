@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — ChatCompletionsRequest schema lists 31 fields with no prompt_cache_key; SDK sends none
+# Cache headers: cache_control {"type": "ephemeral"} on TextBlock via POST /v1/messages; none on /v1/chat/completions
+# Cache policy: send stable prefix via Messages with cache_control on last stable TextBlock; repeat exact prefix to hit; chat completions relies on server-side prefix reuse
+# Docs: https://api.ambient.xyz/openapi.json
 # Ambient's OpenAPI schema exposes reasoning.enabled, reasoning.effort, and
 # reasoning.max_tokens. Model-specific options follow each model's supported
 # reasoning modes (sources accessed 2026-07-17).

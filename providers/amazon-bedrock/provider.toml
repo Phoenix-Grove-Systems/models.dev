@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — Converse API schema uses cachePoint checkpoints, not a chat body key; SDK sends cachePoint
+# Cache headers: cachePoint {"type": "default", "ttl": "5m"|"1h"} in system/messages/tools (Converse); cache_control ephemeral in InvokeModel Claude bodies
+# Cache policy: place checkpoint after stable prefix meeting per-model token minimum; repeat exact prefix within TTL; keep tools→system→messages order stable
+# Docs: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html
 name = "Amazon Bedrock"
 env = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_REGION", "AWS_BEARER_TOKEN_BEDROCK"]
 npm = "@ai-sdk/amazon-bedrock"

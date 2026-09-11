@@ -1,3 +1,7 @@
+# Cache key (chat): send prompt_cache_key — docs list prompt_cache_key (+ prompt_cache_retention) as first-class chat body params; OpenAPI chat schema omits them but docs are authoritative
+# Cache headers: prompt_cache_key string to scope cache reuse; prompt_cache_retention seconds for TTL
+# Cache policy: reuse same key with identical prefix to hit; set retention TTL for high-frequency workloads
+# Docs: https://docs.anyapi.ai/guides/parameters
 name = "AnyAPI"
 npm = "@ai-sdk/openai-compatible"
 # Raw HTTP reasoning controls (sources accessed 2026-06-25):

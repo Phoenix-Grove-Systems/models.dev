@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — plan base inherits Model Studio OpenAI-compatible schema with cache_control markers only; no prompt_cache_key field, SDK sends none
+# Cache headers: cache_control {"type": "ephemeral"} on content blocks to mark explicit prefix checkpoints
+# Cache policy: place marker at end of stable prefix (≥1024 tokens, ≤4 markers, ≤20-block lookback); repeat exact prefix within 5-min TTL, or reuse prefix with no config for server-side prefix match
+# Docs: https://www.alibabacloud.com/help/en/model-studio/context-cache
 name = "Alibaba Coding Plan (China)"
 env = ["ALIBABA_CODING_PLAN_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
