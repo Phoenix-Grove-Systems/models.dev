@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — same gateway-level caching as llmgateway (byte-identical $0 cache plus provider cache-control translation); provider-pinned catalog.
+# Cache key (chat): strip prompt_cache_key — no key field in the chat reference; the gateway derives its own cache key from request params and translates cache_control per upstream.
+# Cache headers: x-llmgateway-cache (HIT on gateway replay), x-no-cache (per-request bypass)
+# Cache policy: gateway $0 byte-identical replay (opt-in per project, TTL default 60s) plus provider cache-control translation/injection; provider-pinned catalog on the same endpoint; stable prefix first.
 # Docs: https://docs.llmgateway.io/features/caching
 # The provider-pinned LLM Gateway catalog: one entry per upstream provider
 # mapping, addressed as `provider/model-id` — the format the gateway accepts to

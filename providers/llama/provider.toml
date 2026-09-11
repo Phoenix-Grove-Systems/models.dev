@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic prefix/KV cache, no key required; usage.cached_tokens plus optional prompt_cache_key.
+# Cache key (chat): send prompt_cache_key — accepted on Chat Completions per the prompt-caching guide and request schema; shared keys route to warm backends (replaces deprecated user field).
+# Cache headers: none
+# Cache policy: automatic prefix/KV cache with no key required; stable content first, volatile last; hits surface at usage.prompt_tokens_details.cached_tokens and bill at the reduced cached rate — add a stable per-prefix key at scale.
 # Docs: https://dev.meta.ai/docs/prompt-caching
 # POST /compat/v1/chat/completions follows Meta's published Chat request
 # schema, which lists no toggle, effort, or reasoning-token-budget field.

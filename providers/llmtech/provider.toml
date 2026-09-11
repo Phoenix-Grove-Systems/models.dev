@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic prompt caching in 1584-token blocks; cached prefixes billed at the cached-input rate.
+# Cache key (chat): strip prompt_cache_key — caching is documented as automatic only, with no key param in the request surface.
+# Cache headers: none
+# Cache policy: automatic prefix cache in 1584-token blocks with lazy materialization (prefix must repeat ~3x to pay off); keep system prompt and tools byte-identical in stable order, volatile content last; cached prefixes bill at the cached-input rate.
 # Docs: https://llmtech.eu/models/qwen3.8-27b
 name = "LLM Tech"
 env = ["LLMTECH_API_KEY"]

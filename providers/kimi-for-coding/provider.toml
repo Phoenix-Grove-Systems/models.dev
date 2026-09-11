@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI/Anthropic passthrough; implicit context cache invalidated on model switch, no cache params.
+# Cache key (chat): strip prompt_cache_key — no cache params documented; only an implicit server-side context cache is described.
+# Cache headers: none
+# Cache policy: implicit context cache per model ID; stay on one model ID with a stable prefix, start a new session on model switch (switching invalidates the cache).
 # Docs: https://www.kimi.com/code/docs/en/kimi-code/models.html
 # NOTE: api.kimi.com/coding serves BOTH Anthropic (/v1/messages) and
 # OpenAI-compatible (/v1/chat/completions) protocols (verified 2026-07).

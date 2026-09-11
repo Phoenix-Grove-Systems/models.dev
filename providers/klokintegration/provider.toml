@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible passthrough; no cache controls or cached pricing documented.
+# Cache key (chat): strip prompt_cache_key — OpenAI-shape chat with no cache params; flat per-token pricing has no cached rate.
+# Cache headers: none
+# Cache policy: plain passthrough with no documented cache behavior; no cache discounts to target.
 # Docs: https://klokintegration.se/docs/ai-api
 name = "klokintegration.se"
 npm = "@ai-sdk/openai-compatible"

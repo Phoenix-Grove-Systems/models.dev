@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic prefix cache; repeated prefixes billed at the published cache-read rate.
+# Cache key (chat): strip prompt_cache_key — chat request params list no key field; caching is server-side only.
+# Cache headers: none
+# Cache policy: automatic prefix cache on shared warm vLLM endpoints; repeated prefixes bill at the cache-read rate — stable content first, volatile last.
 # Docs: https://docs.getlilac.com/inference/pricing
 # POST /v1/chat/completions carries model-template controls under
 # $.chat_template_kwargs; keys and values are model-specific, not universal.

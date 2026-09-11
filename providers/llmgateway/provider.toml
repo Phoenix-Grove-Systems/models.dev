@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — gateway-level caching (byte-identical $0 gateway cache plus provider cache-control translation/injection), not chat params.
+# Cache key (chat): strip prompt_cache_key — no key field in the chat reference; the gateway derives its own cache key from request params and translates cache_control per upstream.
+# Cache headers: x-llmgateway-cache (HIT on gateway replay), x-no-cache (per-request bypass)
+# Cache policy: gateway $0 byte-identical replay (opt-in per project, TTL default 60s) plus provider cache-control translation/injection (Automatic/Client-managed/Disabled); stable prefix first, verify via metadata.cached and usage.prompt_tokens_details.cached_tokens.
 # Docs: https://docs.llmgateway.io/features/caching
 # POST /v1/chat/completions accepts $.reasoning_effort = none|minimal|low|
 # medium|high|xhigh|max. Its raw schema lists $.reasoning.effort = low|medium|

@@ -1,5 +1,7 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible passthrough to upstream; per-model cached rates billed, no gateway cache controls.
-# Docs: https://kilo.ai/docs/gateway
+# Cache key (chat): strip prompt_cache_key — chat schema is a closed param list with no key or cache_control fields and no cached-token usage.
+# Cache headers: none
+# Cache policy: OpenAI-compatible gateway passthrough; no gateway cache controls, any prefix reuse is provider-side only.
+# Docs: https://kilo.ai/docs/gateway/api-reference
 name = "Kilo Gateway"
 env = ["KILO_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

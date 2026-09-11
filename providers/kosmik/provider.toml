@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic prefix cache; usage.cache_read_tokens on chat plus published cache_read rate.
+# Cache key (chat): strip prompt_cache_key — OpenAI-compatible passthrough that keeps requests unchanged; docs publish cached-input billing but no cache-key param.
+# Cache headers: none
+# Cache policy: automatic prefix cache billed at the cached-input rate; reuse stable prefixes verbatim.
 # Docs: https://api.koscompute.com/docs/
 name = "Kosmik Compute"
 env = ["KOSMIK_API_KEY"]
