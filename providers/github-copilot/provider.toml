@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — private POST /chat/completions with authenticated GET /models schema documents no key; public billing docs show cached-input/cache-write rates only; SDK is generic openai-compatible.
+# Cache headers: none
+# Cache policy: automatic prefix caching; keep stable prefix on same model/conversation with no client key; verify via cached-input billing.
+# Docs: https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing
 name = "GitHub Copilot"
 # Reasoning HTTP format (accessed 2026-06-25): POST /chat/completions.
 # Supported controls and values come from authenticated GET /models metadata

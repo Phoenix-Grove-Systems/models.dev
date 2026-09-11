@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — chat surface is Anthropic Messages POST /v1/messages via @ai-sdk/anthropic with no chat-completions key; no provider schema publishes key; native caching uses cache_control.
+# Cache headers: none
+# Cache policy: no chat key; Anthropic-style cache_control breakpoints if upstream supports, otherwise automatic only; keep stable prefix on same model.
+# Docs: https://freemodel.dev
 name = "FreeModel"
 # Reasoning HTTP format (accessed 2026-06-25): POST /v1/messages.
 # FreeModel publishes no request schema for toggle, effort, or budget controls;

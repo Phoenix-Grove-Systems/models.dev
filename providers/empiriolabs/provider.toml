@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — chat schema lists model/messages/stream/temperature/max_tokens/tools/tool_choice/response_format/enable_thinking/thinking_budget with no key; usage has no cached fields; SDK is generic openai-compatible.
+# Cache headers: none
+# Cache policy: implicit automatic cache reads only with no client key or marker; keep stable prefix on same model, billed at implicit-cache-read rate.
+# Docs: https://docs.empiriolabs.ai/api-reference/api-reference/chat-completions/create-chat-completion.md
 name = "EmpirioLabs AI"
 env = ["EMPIRIOLABS_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

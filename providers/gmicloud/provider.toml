@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — closed POST /v1/chat/completions table (model/messages/tools/max_tokens/temperature/top_p/top_k/ignore_eos/stop/response_format/stream) omits key; usage has no cached fields; SDK is generic openai-compatible.
+# Cache headers: none (X-Organization-ID is org routing, not cache).
+# Cache policy: no chat key or cache billing; server-side vLLM/SGLang prefix caching is automatic infra-level with no client control; keep stable prefix first.
+# Docs: https://docs.gmicloud.ai/inference-engine/api-reference/llm-api-reference
 name = "GMI Cloud"
 # Reasoning HTTP format (accessed 2026-06-25): POST /v1/messages for Claude.
 # Native Messages uses thinking = { type = "enabled", budget_tokens = N };
