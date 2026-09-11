@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI/Anthropic-compatible subscription gateway, no documented cache params.
+# Docs: https://cloud.tencent.com/document/product/1823/130060
 name = "Tencent Token Plan"
 env = ["TENCENT_TOKEN_PLAN_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

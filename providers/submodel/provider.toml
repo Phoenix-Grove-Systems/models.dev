@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible InstaGen API, no documented cache params.
+# Docs: https://submodel.gitbook.io/docs/instagen/api-reference
 name = "submodel"
 env = ["SUBMODEL_INSTAGEN_ACCESS_KEY"]
 npm = "@ai-sdk/openai-compatible"

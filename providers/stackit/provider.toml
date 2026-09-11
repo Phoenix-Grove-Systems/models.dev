@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible shared models, no documented cache params.
+# Docs: https://docs.stackit.cloud/products/data-and-ai/ai-model-serving/basics/available-shared-models
 name = "STACKIT"
 env = ["STACKIT_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

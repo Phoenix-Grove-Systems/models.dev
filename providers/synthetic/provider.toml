@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — automatic prefix cache billed via per-model input_cache_reads, no client params.
+# Docs: https://api.synthetic.new/openai/v1/models
 name = "Synthetic"
 env = ["SYNTHETIC_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
