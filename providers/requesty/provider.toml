@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — cache control is the requesty.auto_cache boolean, not prompt_cache_key; no router-side cache store.
+# Cache headers: requesty.auto_cache (request body object) — router adds breakpoints for explicit-breakpoint providers and forwards; provider caches server-side.
+# Cache policy: forward, not store — still send full history every request; true attempts caching, false skips costly writes; defaults vary by origin.
+# Docs: https://docs.requesty.ai/features/auto-caching
 name = "Requesty"
 env = ["REQUESTY_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

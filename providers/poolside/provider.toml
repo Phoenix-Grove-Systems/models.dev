@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — chat completions + usage document no cache params or cached-token counters.
+# Cache headers: none
+# Cache policy: server-native vLLM automatic prefix reuse (prefix_cache_hits metrics); keep a stable append-only prefix; no cache billing.
+# Docs: https://docs.poolside.ai/api/overview
 name = "Poolside"
 env = ["POOLSIDE_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — chat-completions params list no cache key (sampling/thinking/reasoning_effort/tools only); cached-input tiers are billing, not a body key.
+# Cache headers: none
+# Cache policy: server-side implicit cache billed at published cached/non-cached input rates (https://www.qiniu.com/ai/models); explicit cache-creation/read tiers on select models; keep a stable prefix.
+# Docs: https://developer.qiniu.com/aitokenapi/13390/chat-completions
 name = "Qiniu"
 env = ["QINIU_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — standard chat params only; no cache feature documented.
+# Cache headers: none
+# Cache policy: relay; resend full history; caching (if any) follows the serving upstream.
+# Docs: https://docs.regolo.ai/models/families/completions/
 name = "Regolo AI"
 env = ["REGOLO_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

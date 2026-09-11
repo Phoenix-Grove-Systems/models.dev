@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — per-request cache control is the cache_salt body field (extra_body), not prompt_cache_key.
+# Cache headers: cache_salt (request body field via extra_body, or proxy config) — same salt shares a cache; request value overrides proxy.
+# Cache policy: inactive by default; enable per proxy or per request; keep salts private with >=256-bit entropy.
+# Docs: https://docs.privatemode.ai/api/prompt-caching/
 name = "Privatemode AI"
 env = ["PRIVATEMODE_API_KEY", "PRIVATEMODE_ENDPOINT"]
 npm = "@ai-sdk/openai-compatible"
