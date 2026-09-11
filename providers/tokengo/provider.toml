@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic cache layer reuses repeated prompt prefixes and KV state; cache reads billed at the cache rate.
+# Cache key (chat): strip prompt_cache_key — no cache key field documented; cache layer reuses repeated prefixes automatically.
+# Cache headers: none.
+# Cache policy: repeat stable prompt prefixes so the cache layer reuses KV state; no client knob documented.
 # Docs: https://www.tokengo.com/
 # TokenGo is an OpenAI-compatible multi-model gateway (POST /v1/chat/completions).
 # Sources (accessed 2026-08-27), and what each supports:

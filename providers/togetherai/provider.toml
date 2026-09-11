@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — automatic best-effort prefix cache on serverless; no header or param to set.
+# Cache key (chat): strip prompt_cache_key — serverless cache is automatic with no header, parameter, or toggle.
+# Cache headers: none.
+# Cache policy: repeat the same prompt prefix on a cached-input-priced model; longest matching prefix bills at cached rate, best-effort.
 # Docs: https://docs.together.ai/docs/serverless/overview
 name = "Together AI"
 env = ["TOGETHER_API_KEY"]

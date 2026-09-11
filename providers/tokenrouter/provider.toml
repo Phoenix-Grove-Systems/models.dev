@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — gateway smart caching with per-model cache pricing; no chat cache params.
+# Cache key (chat): strip prompt_cache_key — no chat cache params documented; smart caching is gateway-side.
+# Cache headers: none.
+# Cache policy: reuse stable prefixes; per-model cache pricing applies when the route hits.
 # Docs: https://www.tokenrouter.com/docs/tokenrouter-feature-guide/
 name = "TokenRouter"
 env = ["TOKENROUTER_API_KEY"]

@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — automatic prefix cache scoped by SDK-managed `user_cache_secret`, not by chat cache params.
+# Cache key (chat): strip prompt_cache_key — prefix cache is scoped by SDK-managed user_cache_secret, not chat params.
+# Cache headers: user_cache_secret scope — SDK injects the secret into eligible requests; raw HTTP must set the body field, not a header.
+# Cache policy: stable content first, prompts over ~1k chars, same identity plus secret plus model plus prefix.
 # Docs: https://docs.tinfoil.sh/sdk/prompt-caching
 name = "Tinfoil"
 npm = "@ai-sdk/openai-compatible"

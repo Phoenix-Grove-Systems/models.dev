@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — no chat cache controls documented; unknown cache fields are ignored.
+# Cache key (chat): strip prompt_cache_key — consumption API documents no chat cache controls.
+# Cache headers: none.
+# Cache policy: keep shared prefix stable for router-side reuse; no client knob documented.
 # Docs: https://thegrid.ai/docs/api-reference/consumption-api
 name = "The Grid AI"
 env = ["THEGRID_API_KEY"]

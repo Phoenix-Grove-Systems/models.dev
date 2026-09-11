@@ -1,4 +1,6 @@
-# Prompt cache (chat): REJECTS — unknown cache fields fail with 400; caching is automatic best-effort KV prefix reuse.
+# Cache key (chat): strip prompt_cache_key — closed chat schema lists no cache fields; invalid params return 400.
+# Cache headers: none.
+# Cache policy: automatic best-effort KV prefix reuse on warm replicas; repeat stable prefixes, confirm via prompt_tokens_details.cached_tokens.
 # Docs: https://docs.tensorx.ai/api-reference/prompt-caching
 name = "TensorX"
 env = ["TENSORX_API_KEY"]

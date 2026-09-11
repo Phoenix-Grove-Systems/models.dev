@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — automatic prefix cache with per-model cached rates; gateway strips unsupported fields instead of rejecting.
+# Cache key (chat): strip prompt_cache_key — gateway strips unsupported fields instead of rejecting; no cache key documented.
+# Cache headers: none.
+# Cache policy: automatic prefix cache; repeat stable prefixes on cached-rate models.
 # Docs: https://app.umans.ai/offers/code/docs
 name = "Umans AI"
 env = ["UMANS_AI_API_KEY"]

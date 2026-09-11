@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — explicit `prompt_cache_key` request field plus `X-Session-ID` routing header.
+# Cache key (chat): send prompt_cache_key — request body field scoped to conversation_id for KV-cache reuse.
+# Cache headers: X-Session-ID — routes same-user requests to one instance for local KV-hit rate.
+# Cache policy: one prompt_cache_key per conversation, stable X-Session-ID per user, stable system prefix, append messages at end.
 # Docs: https://cloud.tencent.com/document/product/1823/131410
 name = "Tencent TokenHub"
 env = ["TENCENT_TOKENHUB_API_KEY"]
