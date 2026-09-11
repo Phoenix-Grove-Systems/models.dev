@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — chat table defines only model/messages/max_tokens/stream/temperature; usage is prompt/completion/total with no cached accounting.
+# Cache headers: none
+# Cache policy: no chat cache controls; relay with stable prefixes for any upstream implicit hits.
+# Docs: https://vancine.com/docs
 name = "Vancine"
 npm = "@ai-sdk/openai-compatible"
 env = ["VANCINE_API_KEY"]

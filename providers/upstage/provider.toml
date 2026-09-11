@@ -1,3 +1,7 @@
+# Cache key (chat): send prompt_cache_key — native Solar chat documents top-level prompt_cache_key plus a Prompt Caching section with per-session key guidance.
+# Cache headers: none
+# Cache policy: native implicit prefix cache; send a stable per-session prompt_cache_key with the static prefix first.
+# Docs: https://console.upstage.ai/api/docs/for-agents/raw
 name = "Upstage"
 # Raw POST /v1/solar/chat/completions uses top-level reasoning_effort.
 # solar-pro2: "high" enables reasoning; omission disables it. solar-pro3:

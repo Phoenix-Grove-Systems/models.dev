@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — strict chat schema defines no cache fields and extra fields fail with 422 Validation Error; usage is completion/prompt/total only.
+# Cache headers: none
+# Cache policy: no cache; do not send the key on chat (strict 422 schema).
+# Docs: https://api.vultrinference.com/
 name = "Vultr"
 # POST /v1/chat/completions documents no reasoning request field or control.
 # Responses may contain choices[].message.reasoning; a -normalize model suffix

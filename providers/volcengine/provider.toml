@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — chat rejects unknown fields (400 unknown field "prompt_cache_key"); schema defines no cache params.
+# Cache headers: none
+# Cache policy: no chat-level cache; use the separate Context API (ContextCreate context_id to ContextChatCompletions) or Responses caching with previous_response_id.
+# Docs: https://api.volcengine.com/api-docs/?serviceCode=ark&version=2024-01-01
 name = "Volcengine Ark"
 env = ["ARK_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
