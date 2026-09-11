@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible chat endpoint; schema lists model/messages/reasoning only, no documented cache control.
+# Cache key (chat): strip prompt_cache_key — OpenAPI schema for POST /v1/chat/completions allows model/messages/reasoning.effort only; no cache field.
+# Cache headers: none
+# Cache policy: no documented cache — replay stable prefixes; treat usage as uncached.
 # Docs: https://www.xpersona.co/api/v1/openapi/ai-public
 name = "Xpersona"
 # POST /v1/chat/completions accepts reasoning.effort set to "low", "medium",

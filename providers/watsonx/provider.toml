@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — native wx.ai chat API via watsonx-ai-provider; no chat-level cache params documented.
+# Cache key (chat): strip prompt_cache_key — native wx.ai chat API via watsonx-ai-provider; no prompt_cache_key body field documented.
+# Cache headers: none
+# Cache policy: no chat-level cache params documented — wx.ai native inference only; replay stable prefixes.
 # Docs: https://cloud.ibm.com/apidocs/watsonx-ai
 name = "watsonx.ai"
 env = ["WATSONX_AI_APIKEY", "WATSONX_AI_PROJECT_ID"]

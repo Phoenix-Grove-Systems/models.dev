@@ -1,5 +1,7 @@
-# Prompt cache (chat): UNKNOWN — first-party OpenAI-compatible API; no cache docs or extra-field policy found.
-# Docs: https://docs.wandb.ai/inference/api-reference/
+# Cache key (chat): strip prompt_cache_key — OpenAI-compatible /chat/completions schema shows model/messages only; usage reports prompt/completion/total with no cached-token field.
+# Cache headers: none
+# Cache policy: no documented prompt cache — replay stable prefixes; treat usage as uncached.
+# Docs: https://docs.wandb.ai/inference/api-reference/chat-completions
 name = "Weights & Biases"
 # POST /v1/chat/completions toggles eligible models with
 # chat_template_kwargs.enable_thinking=true|false; output is choices[].message.reasoning.

@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — automatic implicit context caching reported via usage.prompt_tokens_details.cached_tokens; no client key.
+# Cache key (chat): strip prompt_cache_key — implicit automatic context caching; requests take model/messages only with no key field, hits via usage.prompt_tokens_details.cached_tokens.
+# Cache headers: none
+# Cache policy: automatic implicit prefix cache — replay stable system prompts/history for hits; cached tokens billed discounted.
 # Docs: https://docs.z.ai/guides/capabilities/cache
 # Chat reasoning: POST https://api.z.ai/api/paas/v4/chat/completions with
 # `thinking.type = "enabled" | "disabled"` (default: enabled).

@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — automatic prefix cache; x-grok-conv-id header steers chat hits, prompt_cache_key body key is Responses-only.
+# Cache key (chat): strip prompt_cache_key — prompt_cache_key is Responses-only; chat steering uses the x-grok-conv-id header.
+# Cache headers: x-grok-conv-id steering — same ID routes to the same server for per-server prefix cache hits.
+# Cache policy: automatic prefix cache on shared leading messages; reuse stable prefixes + conversation ID; hits via usage.prompt_tokens_details.cached_tokens.
 # Docs: https://docs.x.ai/developers/advanced-api-usage/prompt-caching
 name = "xAI"
 env = ["XAI_API_KEY"]
