@@ -1,3 +1,5 @@
+# Prompt cache (chat): UNKNOWN — first-party OpenAI-compatible API; no cache docs or extra-field policy found.
+# Docs: https://docs.wandb.ai/inference/api-reference/
 name = "Weights & Biases"
 # POST /v1/chat/completions toggles eligible models with
 # chat_template_kwargs.enable_thinking=true|false; output is choices[].message.reasoning.

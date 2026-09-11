@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — same automatic context caching on the coding chat endpoint; plan credits bill cached input, no client key.
+# Docs: https://docs.z.ai/guides/capabilities/cache
 # OpenAI Chat endpoint: POST https://api.z.ai/api/coding/paas/v4/chat/completions.
 # Coding Plan models currently available: glm-5.2, glm-5-turbo, glm-4.7.
 # GLM-5.2 maps low|medium|high to high and xhigh|max|ultracode to max.

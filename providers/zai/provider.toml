@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — automatic implicit context caching reported via usage.prompt_tokens_details.cached_tokens; no client key.
+# Docs: https://docs.z.ai/guides/capabilities/cache
 # Chat reasoning: POST https://api.z.ai/api/paas/v4/chat/completions with
 # `thinking.type = "enabled" | "disabled"` (default: enabled).
 # https://docs.z.ai/guides/capabilities/thinking (accessed 2026-06-25)

@@ -1,3 +1,5 @@
+# Prompt cache (chat): UNKNOWN — private LLM plus router; no cache params or cached-token fields documented, caching depends on downstream.
+# Docs: https://docs.zeldoc.ai
 name = "Zeldoc"
 env = ["ZELDOC_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — automatic prefix cache; x-grok-conv-id header steers chat hits, prompt_cache_key body key is Responses-only.
+# Docs: https://docs.x.ai/developers/advanced-api-usage/prompt-caching
 name = "xAI"
 env = ["XAI_API_KEY"]
 npm = "@ai-sdk/xai"

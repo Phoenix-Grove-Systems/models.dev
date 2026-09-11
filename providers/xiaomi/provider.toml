@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — native cached-input billing (cache_read); no client-facing cache key documented.
+# Docs: https://platform.xiaomimimo.com/#/docs
 name = "Xiaomi"
 # Raw endpoints are POST https://api.xiaomimimo.com/v1/chat/completions and
 # POST https://api.xiaomimimo.com/anthropic/v1/messages. Both use

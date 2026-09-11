@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — native cached-input billing (cache_read); no client-facing cache key documented.
+# Docs: https://platform.xiaomimimo.com/#/docs
 name = "Xiaomi Token Plan (Europe)"
 # Raw endpoints are POST https://token-plan-ams.xiaomimimo.com/v1/chat/completions
 # and POST https://token-plan-ams.xiaomimimo.com/anthropic/v1/messages.
