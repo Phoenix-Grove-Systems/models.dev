@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible chat endpoint; no documented cache control.
+# Cache key (chat): strip prompt_cache_key — OpenAI-compatible chat endpoint docs list no cache request params.
+# Cache headers: none
+# Cache policy: none documented — no native cache control.
 # Docs: https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/tools/opencode.html
 # SCNet documents its OpenAI-compatible endpoint and OpenCode integration here:
 # https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/tools/opencode.html

@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic prefix cache surfaced via cached_tokens usage fields.
+# Cache key (chat): strip prompt_cache_key — chat completions supported-fields list has no prompt_cache_key or cache_control; cached_tokens usage fields are billing evidence only.
+# Cache headers: none
+# Cache policy: auto — server-side prefix/orchestration reuse, no client control; keep stable prefix first, hits surface via cached_tokens usage.
 # Docs: https://console.sakana.ai/models
 name = "Sakana AI"
 env = ["SAKANA_API_KEY"]

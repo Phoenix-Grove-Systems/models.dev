@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic prefix cache billed at Cache Read (cached input) rates.
+# Cache key (chat): strip prompt_cache_key — chat completions schema has no prompt_cache_key or cache_control; Cache Read pricing is billing evidence only.
+# Cache headers: none
+# Cache policy: auto — server-side prefix cache, no client control; stable prefix first, Cache Read rates on hit; repeated text does not guarantee a hit (see usage cached_tokens / prompt_cache_hit_tokens).
 # Docs: https://www.siliconflow.com/blog/siliconflow-prompt-caching-api-costs
 name = "SiliconFlow (China)"
 env = ["SILICONFLOW_CN_API_KEY"]

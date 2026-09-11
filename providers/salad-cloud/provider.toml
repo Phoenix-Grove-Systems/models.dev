@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible gateway; no documented cache control.
+# Cache key (chat): strip prompt_cache_key — OpenAI-compatible gateway docs list no cache request params.
+# Cache headers: none
+# Cache policy: none documented — no native cache control; behavior follows the serving upstream.
 # Docs: https://docs.salad.com/ai-gateway/explanation/overview
 name = "SaladCloud AI Gateway"
 env = ["SALAD_CLOUD_API_KEY"]

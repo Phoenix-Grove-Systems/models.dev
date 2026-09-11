@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic token caching with discounted cached-input billing.
+# Cache key (chat): strip prompt_cache_key — prompt_cache_key absent from supported chat params; discounted cached-input billing is billing evidence only.
+# Cache headers: none
+# Cache policy: auto — Serverless persists prefix cache automatically via heuristics (50–90% hit for recurring prefixes, discounted cached-input billing, monitor in Cockpit); Dedicated includes its input cache.
 # Docs: https://www.scaleway.com/en/docs/generative-apis/faq/
 name = "Scaleway"
 npm = "@ai-sdk/openai-compatible"

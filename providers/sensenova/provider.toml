@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible endpoint; no documented cache control.
+# Cache key (chat): strip prompt_cache_key — OpenAI-compatible endpoint docs list no cache request params.
+# Cache headers: none
+# Cache policy: none documented — no native cache control.
 # Docs: https://platform.sensenova.cn/docs
 name = "SenseNova (China)"
 npm = "@ai-sdk/openai-compatible"

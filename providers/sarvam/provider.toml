@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-style chat endpoint; no documented cache control.
+# Cache key (chat): strip prompt_cache_key — chat completions schema documents no prompt_cache_key, cache_control, or cache headers; usage has no cached-token fields.
+# Cache headers: none
+# Cache policy: none documented — no native cache control.
 # Docs: https://docs.sarvam.ai/api-reference-docs/chat/chat-completions
 name = "Sarvam AI"
 env = ["SARVAM_API_KEY"]
