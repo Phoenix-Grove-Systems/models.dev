@@ -1,3 +1,5 @@
+# Prompt cache (chat): UNKNOWN — first-party OpenAI-compatible API; no cache docs or extra-field policy found.
+# Docs: https://agnes-ai.com/doc
 name = "Agnes AI"
 env = ["AGNES_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

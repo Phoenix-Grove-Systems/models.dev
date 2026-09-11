@@ -1,3 +1,5 @@
+# Prompt cache (chat): UNKNOWN — closed param list, own infra; usage reports cached_tokens but no client key documented.
+# Docs: https://docs.aiand.com/api/chat-completions/
 name = "ai&"
 npm = "@ai-sdk/openai-compatible"
 env = ["AIAND_API_KEY"]

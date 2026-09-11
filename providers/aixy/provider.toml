@@ -1,3 +1,5 @@
+# Prompt cache (chat): REJECTS — untranslatable advanced fields rejected explicitly; prompt_cache_key not in schema.
+# Docs: https://docs.aixy-gateway.com/api-reference/inference/create-a-chat-completion.md
 name = "Aixy"
 env = ["AIXY_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

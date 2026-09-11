@@ -1,3 +1,5 @@
+# Prompt cache (chat): UNKNOWN — gateway docs list no cache fields; no extra-field policy found.
+# Docs: https://ai-router.dev/openai-compatible-api-gateway/
 name = "AI-ROUTER"
 env = ["AI_ROUTER_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

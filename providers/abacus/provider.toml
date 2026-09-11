@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — RouteLLM gateway forwards body to routed model; no cache fields documented.
+# Docs: https://abacus.ai/help/api
 name = "Abacus"
 npm = "@ai-sdk/openai-compatible"
 # Reasoning HTTP format (accessed 2026-06-25):

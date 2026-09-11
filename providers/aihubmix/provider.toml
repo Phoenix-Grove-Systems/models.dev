@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — accepts prompt_cache_key per GPT-Cache docs (verified cached_tokens example).
+# Docs: https://docs.aihubmix.com/cn/api/GPT-Cache.md
 name = "AIHubMix"
 npm = "@aihubmix/ai-sdk-provider"
 # Raw Chat: $.reasoning_effort = "none"|"minimal"|"low"|"medium"|"high"|"xhigh"; aliases are $.reasoning.effort and integer $.reasoning.max_tokens. "none" disables models that permit it. https://docs.aihubmix.com/cn/api/unified-inference (accessed 2026-06-25)

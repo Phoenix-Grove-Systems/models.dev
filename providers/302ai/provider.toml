@@ -1,3 +1,5 @@
+# Prompt cache (chat): UNKNOWN — relay proxies upstream lab endpoints; no prompt-cache docs found.
+# Docs: https://doc.302.ai
 name = "302.AI"
 env = ["302AI_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
