@@ -1,4 +1,6 @@
-# Prompt cache (chat): UNKNOWN — no prompt_cache_key or prompt-caching behavior documented for the OpenAI-compatible endpoint.
+# Cache key (chat): send prompt_cache_key — docs silent on cache; OpenAI-compatible gateway with no strict schema published and no 400 documented, so the key forwards to upstream where supported.
+# Cache headers: none.
+# Cache policy: no gateway-level key control; keep stable shared prefixes and reuse the key per prefix.
 # Docs: https://bothub.ru/models
 name = "Bothub"
 env = ["BOTHUB_API_KEY"]

@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — schema omits prompt_cache_key but permits extras (additionalProperties:{}), so an unknown key is accepted without effect.
+# Cache key (chat): send prompt_cache_key — OpenAPI ChatCompletionRequest omits prompt_cache_key but sets additionalProperties:{}, so the key is accepted without effect.
+# Cache headers: none.
+# Cache policy: no key-based control; identical-prefix reuse only if the upstream backend applies it.
 # Docs: https://api.berget.ai/openapi.json
 name = "Berget.AI"
 env = ["BERGET_API_KEY"]

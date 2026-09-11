@@ -1,4 +1,6 @@
-# Prompt cache (chat): UNKNOWN — OpenAI-compatible gateway docs list chat/streaming/tools with no cache param or schema.
+# Cache key (chat): send prompt_cache_key — docs describe a plain OpenAI-compatible routing gateway, silent on cache, with no strict schema published; the SDK-passed key forwards to operators.
+# Cache headers: none.
+# Cache policy: no key-based control; keep stable shared prefixes so operator-side reuse can apply.
 # Docs: https://blueclaw.network/how-it-works.html
 name = "Blue Claw"
 npm = "@ai-sdk/openai-compatible"

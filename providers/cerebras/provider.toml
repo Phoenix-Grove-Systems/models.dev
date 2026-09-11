@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic prefix caching plus optional prompt_cache_key routing hint (max 1024 chars, longer values rejected with 400).
+# Cache key (chat): send prompt_cache_key — docs give automatic prefix caching plus optional prompt_cache_key routing hint; values over 1024 chars are rejected with 400.
+# Cache headers: usage.prompt_tokens_details.cached_tokens (greater than 0 means a hit).
+# Cache policy: send the same key (max 1024 chars) for requests sharing a prefix; keep prefixes stable and append-only; one shared key per conversation, not per common system prompt.
 # Docs: https://inference-docs.cerebras.ai/capabilities/prompt-caching
 name = "Cerebras"
 env = ["CEREBRAS_API_KEY"]

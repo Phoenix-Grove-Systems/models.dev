@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — explicit prompt_cache_key field with OpenAI-compatible passthrough.
+# Cache key (chat): send prompt_cache_key — docs list explicit prompt_cache_key ("Prompt caching identifier. Supported by OpenAI.") with OpenAI-compatible passthrough.
+# Cache headers: usage.prompt_tokens_details.cached_tokens and cache_write_tokens, present when the upstream provider reports them.
+# Cache policy: reuse the same prompt_cache_key for requests sharing a prompt prefix; keep stable content at the start.
 # Docs: https://docs.auriko.ai/api-reference/chat-completions
 name = "Auriko"
 env = ["AURIKO_API_KEY"]

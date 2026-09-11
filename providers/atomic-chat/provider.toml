@@ -1,4 +1,6 @@
-# Prompt cache (chat): UNKNOWN — local OpenAI-compatible server documents no prompt_cache_key or caching behavior; backend-dependent.
+# Cache key (chat): send prompt_cache_key — docs silent on cache; local OpenAI-compatible server with no strict request schema, so backends ignore the extra key.
+# Cache headers: none.
+# Cache policy: automatic server-side KV reuse per loaded backend; no key-based control.
 # Docs: https://github.com/AtomicBot-ai/Atomic-Chat
 name = "Atomic Chat"
 env = ["ATOMIC_CHAT_API_KEY"]

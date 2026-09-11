@@ -1,4 +1,6 @@
-# Prompt cache (chat): REJECTS — strict ChatCompletionRequest (additionalProperties:false) with no prompt_cache_key; unknown key fails validation.
+# Cache key (chat): strip prompt_cache_key — OpenAPI ChatCompletionRequest sets additionalProperties:false with no prompt_cache_key property, so the key fails validation.
+# Cache headers: usage.prompt_tokens_details.cached_tokens as reported on responses.
+# Cache policy: no request-side key control; omit the key and keep stable prefixes so backend-side reuse can apply.
 # Docs: https://docs.baseten.co/reference/inference-api/chat-completions
 name = "Baseten"
 npm = "@ai-sdk/openai-compatible"

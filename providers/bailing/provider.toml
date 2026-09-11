@@ -1,4 +1,6 @@
-# Prompt cache (chat): UNKNOWN — no prompt_cache_key or prompt-caching behavior documented.
+# Cache key (chat): send prompt_cache_key — docs silent on cache; OpenAI-compatible endpoint with no strict schema published and no 400 documented, so the SDK-passed key is tolerated.
+# Cache headers: none.
+# Cache policy: no documented key control; identical-prefix reuse only if the upstream backend applies it.
 # Docs: https://alipaytbox.yuque.com/sxs0ba/ling/intro
 name = "Bailing"
 env = ["BAILING_API_TOKEN"]
