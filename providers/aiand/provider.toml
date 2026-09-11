@@ -1,4 +1,6 @@
-# Prompt cache (chat): UNKNOWN — closed param list, own infra; usage reports cached_tokens but no client key documented.
+# Cache key (chat): strip prompt_cache_key — closed request-body param table in chat-completions ref (model/messages/stream/temperature/top_p/reasoning_effort/user etc.) with no prompt_cache_key and no additionalProperties; API 400s mismatches (model_capability_mismatch); usage already reports prompt_tokens_details.cached_tokens automatically.
+# Cache headers: none
+# Cache policy: automatic prefix cache on own infra; verify via usage.prompt_tokens_details.cached_tokens; stable prefix, same model.
 # Docs: https://docs.aiand.com/api/chat-completions/
 name = "ai&"
 npm = "@ai-sdk/openai-compatible"

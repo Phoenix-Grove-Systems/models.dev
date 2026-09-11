@@ -1,4 +1,6 @@
-# Prompt cache (chat): UNKNOWN — community proxy; docs cover client setup only, no API field reference.
+# Cache key (chat): send prompt_cache_key — OpenAI-compatible proxy (baseURL https://agentrouter.org/v1); client-setup docs define no closed schema and no 400 on extra fields; body forwarded upstream where GPT-5.x-class models accept prompt_cache_key.
+# Cache headers: none
+# Cache policy: gateway passthrough; hit via upstream automatic prefix cache (stable prefix, same model).
 # Docs: https://agentrouter.org/docs/opencode.html
 name = "AgentRouter"
 env = ["AGENTROUTER_API_KEY"]

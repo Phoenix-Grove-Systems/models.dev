@@ -1,4 +1,6 @@
-# Prompt cache (chat): REJECTS — untranslatable advanced fields rejected explicitly; prompt_cache_key not in schema.
+# Cache key (chat): strip prompt_cache_key — OpenAPI ChatCompletionRequest schema lists only model/messages/stream/temperature/max_tokens (no prompt_cache_key); docs state "Advanced fields without a supported translation are rejected explicitly"; only X-Request-ID / X-Aixy-Client / X-Provider headers defined.
+# Cache headers: none (X-Request-ID tracing, X-Aixy-Client attribution not forwarded, X-Provider selection — none affect cache)
+# Cache policy: strict BYOK gateway, no client cache control; upstream cache (if any) automatic via provider-qualified model routing.
 # Docs: https://docs.aixy-gateway.com/api-reference/inference/create-a-chat-completion.md
 name = "Aixy"
 env = ["AIXY_API_KEY"]

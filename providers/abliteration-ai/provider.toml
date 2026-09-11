@@ -9,7 +9,9 @@
 # - POST /v1/messages: "output_config": { "effort": "<level>" } or
 #   "thinking": { "type": "enabled", "budget_tokens": <n> };
 #   "thinking": false disables reasoning
-# Prompt cache (chat): SUPPORTS — accepts prompt_cache_key (or x-abliteration-session-id header); automatic prefix cache.
+# Cache key (chat): send prompt_cache_key — first-party prompt-caching doc gives Chat Completions JSON example with "prompt_cache_key": "conv_7d2a9f" as routing hint; when both key and header present, x-abliteration-session-id wins.
+# Cache headers: x-abliteration-session-id (session affinity routing hint for any generation endpoint; overrides prompt_cache_key)
+# Cache policy: automatic prefix cache, best-effort (same project+model, identical prefix incl. tools/reasoning settings, enough tokens); cache reads billed 10%; verify via usage.prompt_tokens_details.cached_tokens.
 # Docs: https://docs.abliteration.ai/capabilities/prompt-caching.md
 name = "abliteration.ai"
 env = ["ABLIT_KEY"]

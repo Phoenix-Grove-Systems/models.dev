@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — automatic upstream cache passthrough; reports x-input-cache-hit-rate, no client key.
+# Cache key (chat): strip prompt_cache_key — closed request-body tables for POST /v1/messages and /v1/chat/completions list no prompt_cache_key (messages, max_tokens, stream, temperature, top_p, tools, tool_choice, response_format); chat alias delegates to messages with no additionalProperties passthrough documented.
+# Cache headers: none (x-session-id groups usage reporting only, also accepted as session_id body; cache hits surface via x-input-cache-hit-rate / x-input-cache-hit-tokens response headers)
+# Cache policy: automatic upstream prefix cache passthrough with full discount; verify per response via x-input-cache-hit-rate.
 # Docs: https://above.dev/docs
 name = "above.dev"
 env = ["ABOVE_API_KEY"]

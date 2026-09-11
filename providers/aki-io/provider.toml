@@ -1,4 +1,6 @@
-# Prompt cache (chat): UNKNOWN — narrow documented param list on EU-hosted models; no cache docs or extra-field policy.
+# Cache key (chat): strip prompt_cache_key — narrow documented chat params (model/messages/temperature/max_tokens/stream/stop) with no prompt_cache_key, no cache usage fields, and no additionalProperties; unlisted models fall back silently, so a client key cannot reliably address cache.
+# Cache headers: none
+# Cache policy: no client cache control; any upstream prefix cache is automatic; stable prefix, same model.
 # Docs: https://aki.io/docs/compatibility/openai-api-compatibility/
 name = "AKI.IO"
 env = ["AKI_IO_API_KEY"]

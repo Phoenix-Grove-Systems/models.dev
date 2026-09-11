@@ -1,5 +1,7 @@
-# Prompt cache (chat): UNKNOWN — relay proxies upstream lab endpoints; no prompt-cache docs found.
-# Docs: https://doc.302.ai
+# Cache key (chat): send prompt_cache_key — OpenAI-compatible relay forwards chat body upstream per lab endpoint (docs index lists OpenAI Chat/Responses passthrough); extra fields not rejected, only invalid values 400 (verified reasoning_effort probe); upstream OpenAI SDK type accepts prompt_cache_key.
+# Cache headers: none
+# Cache policy: gateway passthrough; hit via upstream automatic prefix cache (stable prefix, same model); no client-side breakpoint.
+# Docs: https://doc.302.ai/llms.txt
 name = "302.AI"
 env = ["302AI_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

@@ -1,5 +1,7 @@
-# Prompt cache (chat): UNKNOWN — gateway docs list no cache fields; no extra-field policy found.
-# Docs: https://ai-router.dev/openai-compatible-api-gateway/
+# Cache key (chat): send prompt_cache_key — OpenAI-compatible API gateway (site confirms AI API Gateway); gateway docs list no closed schema and no 400 on extra fields; body forwarded upstream per OpenAI SDK ChatCompletion type.
+# Cache headers: none
+# Cache policy: gateway passthrough; hit via upstream automatic prefix cache (stable prefix, same model).
+# Docs: https://ai-router.dev/
 name = "AI-ROUTER"
 env = ["AI_ROUTER_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

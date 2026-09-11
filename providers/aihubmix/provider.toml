@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — accepts prompt_cache_key per GPT-Cache docs (verified cached_tokens example).
+# Cache key (chat): send prompt_cache_key — first-party GPT-Cache doc requires the key for reliable matching on GPT-5.6 (curl + OpenAI SDK examples, verified cached_tokens 2816 on repeat); also supports prompt_cache_options (implicit/explicit, ttl 30m) and prompt_cache_breakpoint content-block breakpoints.
+# Cache headers: none
+# Cache policy: automatic 1024-token prefix cache plus key-assisted matching; explicit breakpoints pin the stable prefix; explicit mode without breakpoints disables writes; verify via usage.prompt_tokens_details.cached_tokens.
 # Docs: https://docs.aihubmix.com/cn/api/GPT-Cache.md
 name = "AIHubMix"
 npm = "@aihubmix/ai-sdk-provider"

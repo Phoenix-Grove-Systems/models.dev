@@ -1,4 +1,6 @@
-# Prompt cache (chat): UNKNOWN — first-party OpenAI-compatible API; no cache docs or extra-field policy found.
+# Cache key (chat): send prompt_cache_key — OpenAI-style API (base https://apihub.agnes-ai.com/v1); overview docs define no closed param list and no rejection policy; extra body forwarded upstream per OpenAI SDK ChatCompletion type.
+# Cache headers: none
+# Cache policy: gateway passthrough; hit via upstream automatic prefix cache (stable prefix, same model).
 # Docs: https://agnes-ai.com/doc
 name = "Agnes AI"
 env = ["AGNES_API_KEY"]
