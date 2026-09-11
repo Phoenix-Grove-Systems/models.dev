@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — no first-party cache; translates and forwards cache_control, prompt_cache_breakpoint, and session keys upstream with sticky routing.
+# Docs: https://openrouter.ai/docs/features/prompt-caching
 name = "OpenRouter"
 env = ["OPENROUTER_API_KEY"]
 npm = "@openrouter/ai-sdk-provider"

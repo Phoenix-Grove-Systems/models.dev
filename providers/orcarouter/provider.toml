@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — session-affinity header pins a conversation to a warm upstream deployment; honors prompt_cache_key and prefix fingerprint.
+# Docs: https://docs.orcarouter.ai/routing/session-affinity
 name = "OrcaRouter"
 env = ["ORCAROUTER_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

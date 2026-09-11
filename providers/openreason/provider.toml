@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — router forwards request fields verbatim to pinned upstream endpoints with no cache controls documented.
+# Docs: https://openreason.app
 name = "OpenReason"
 # Sovereignty-aware OpenAI-compatible router across US and EU inference.
 # Endpoints are pinned via the `@<endpoint-id>` suffix on the model slug

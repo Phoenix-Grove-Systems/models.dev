@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — no cache controls, cache usage fields, or cache rates documented on Sonar chat.
+# Docs: https://docs.perplexity.ai/api-reference/sonar-post
 name = "Perplexity"
 env = ["PERPLEXITY_API_KEY"]
 npm = "@ai-sdk/perplexity"

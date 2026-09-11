@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — undocumented gateway surface that forwards request fields upstream with no cache controls documented.
+# Docs: https://opencode.ai/docs/zen#endpoints
 name = "OpenCode Go"
 env = ["OPENCODE_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

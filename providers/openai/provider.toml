@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — automatic prefix caching by default, plus explicit breakpoints, keys, and TTL controls.
+# Docs: https://platform.openai.com/docs/guides/prompt-caching
 name = "OpenAI"
 env = ["OPENAI_API_KEY"]
 npm = "@ai-sdk/openai"

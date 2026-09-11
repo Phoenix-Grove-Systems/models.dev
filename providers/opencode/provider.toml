@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — gateway passthrough with per-model cached-read billing and no chat cache controls documented.
+# Docs: https://opencode.ai/docs/zen
 name = "OpenCode Zen"
 env = ["OPENCODE_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
