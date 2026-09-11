@@ -1,3 +1,5 @@
+# Prompt cache (chat): UNKNOWN — no prompt_cache_key or prompt-caching behavior documented for the OpenAI-compatible endpoint.
+# Docs: https://bothub.ru/models
 name = "Bothub"
 env = ["BOTHUB_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

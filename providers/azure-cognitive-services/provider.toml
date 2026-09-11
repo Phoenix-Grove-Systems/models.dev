@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — same Azure OpenAI prompt-caching surface: automatic prefix caching plus prompt_cache_key.
+# Docs: https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/prompt-caching
 name = "Azure Cognitive Services"
 env = ["AZURE_COGNITIVE_SERVICES_RESOURCE_NAME", "AZURE_COGNITIVE_SERVICES_API_KEY"]
 npm = "@ai-sdk/azure"

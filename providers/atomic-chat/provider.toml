@@ -1,3 +1,5 @@
+# Prompt cache (chat): UNKNOWN — local OpenAI-compatible server documents no prompt_cache_key or caching behavior; backend-dependent.
+# Docs: https://github.com/AtomicBot-ai/Atomic-Chat
 name = "Atomic Chat"
 env = ["ATOMIC_CHAT_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

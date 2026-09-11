@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — request schema omits prompt_cache_key with no additionalProperties:false, so an unknown key is accepted but ignored.
+# Docs: https://docs.arcee.ai/api-reference/chat-completion
 name = "Arcee"
 npm = "@ai-sdk/openai-compatible"
 env = ["ARCEE_API_KEY"]

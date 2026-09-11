@@ -1,3 +1,5 @@
+# Prompt cache (chat): REJECTS — strict ChatCompletionRequest (additionalProperties:false) with no prompt_cache_key; unknown key fails validation.
+# Docs: https://docs.baseten.co/reference/inference-api/chat-completions
 name = "Baseten"
 npm = "@ai-sdk/openai-compatible"
 # Raw HTTP reasoning controls (sources accessed 2026-06-25):

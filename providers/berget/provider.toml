@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — schema omits prompt_cache_key but permits extras (additionalProperties:{}), so an unknown key is accepted without effect.
+# Docs: https://api.berget.ai/openapi.json
 name = "Berget.AI"
 env = ["BERGET_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — explicit prompt_cache_key field with OpenAI-compatible passthrough.
+# Docs: https://docs.auriko.ai/api-reference/chat-completions
 name = "Auriko"
 env = ["AURIKO_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

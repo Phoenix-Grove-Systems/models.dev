@@ -1,3 +1,5 @@
+# Prompt cache (chat): UNKNOWN — no prompt_cache_key or prompt-caching behavior documented.
+# Docs: https://alipaytbox.yuque.com/sxs0ba/ling/intro
 name = "Bailing"
 env = ["BAILING_API_TOKEN"]
 npm = "@ai-sdk/openai-compatible"

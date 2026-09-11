@@ -1,3 +1,5 @@
+# Prompt cache (chat): UNKNOWN — OpenAI-compatible gateway docs list chat/streaming/tools with no cache param or schema.
+# Docs: https://blueclaw.network/how-it-works.html
 name = "Blue Claw"
 npm = "@ai-sdk/openai-compatible"
 api = "https://openai.blueclaw.network/v1"

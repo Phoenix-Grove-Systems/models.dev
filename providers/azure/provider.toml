@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — automatic prefix caching plus prompt_cache_key routing hint (retention/breakpoints on newer models).
+# Docs: https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/prompt-caching
 name = "Azure"
 env = ["AZURE_RESOURCE_NAME", "AZURE_API_KEY"]
 npm = "@ai-sdk/azure"
