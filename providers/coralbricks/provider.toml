@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — docs state automatic serving-tier prefix caching with "no cache-management flags to set" and list no prompt_cache_key or cache_control chat field; cached input is free.
+# Cache headers: none
+# Cache policy: resend the full conversation so the resident prefix hits; free cached reads reported as usage cached_tokens.
+# Docs: https://www.coralbricks.ai/docs.md
 name = "CoralBricks"
 env = ["CORAL_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

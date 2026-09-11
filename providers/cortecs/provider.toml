@@ -1,3 +1,7 @@
+# Cache key (chat): send prompt_cache_key — caching is transparent at the serving-provider level and the router only detects prompt_tokens_details for billing, so body fields ride through; backend-unsupported compat fields are silently ignored, never a Cortecs-native control.
+# Cache headers: none
+# Cache policy: keep a stable prompt prefix; backend-dependent hits surface as prompt_tokens_details.cached_tokens and bill at the backend's cache-read rate.
+# Docs: https://docs.cortecs.ai/routing/prompt-caching
 name = "Cortecs"
 env = ["CORTECS_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

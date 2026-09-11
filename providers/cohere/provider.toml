@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — v2/chat reference body schema is closed (stream/model/messages/tools/documents/response_format/safety_mode/max_tokens/stop_sequences/temperature/seed/penalties/k/p/logprobs/tool_choice/thinking/priority/strict_tools) with no cache key; usage.cached_tokens proves an automatic inference cache.
+# Cache headers: none
+# Cache policy: automatic server-side inference cache; hits surface as usage.cached_tokens with no client control.
+# Docs: https://docs.cohere.com/reference/chat
 name = "Cohere"
 env = ["COHERE_API_KEY"]
 npm = "@ai-sdk/cohere"

@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — GET /v1/models supported_sampling_parameters is closed (temperature/top_p/top_k/penalties/stop/seed) with no cache key; SGLang-backed automatic prefix cache billed via per-model input_cache_read.
+# Cache headers: none
+# Cache policy: resend a stable prefix; hits need no flag and bill at input_cache_read.
+# Docs: https://llm.chutes.ai/v1/models
 name = "Chutes"
 env = ["CHUTES_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

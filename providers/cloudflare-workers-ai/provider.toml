@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — prompt-caching doc defines only automatic prefix caching plus the session-affinity header; no prompt_cache_key in the run or OpenAI-compatible request schema.
+# Cache headers: x-session-affinity (session/instance stickiness to route repeats at the tensor-holding instance).
+# Cache policy: keep a stable token prefix on select prefix-caching models and send x-session-affinity; discounted cached input is reported in usage.
+# Docs: https://developers.cloudflare.com/workers-ai/features/prompt-caching/
 name = "Cloudflare Workers AI"
 env = ["CLOUDFLARE_ACCOUNT_ID", "CLOUDFLARE_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
