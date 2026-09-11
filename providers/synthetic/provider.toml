@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — automatic prefix cache billed via per-model input_cache_reads, no client params.
+# Cache key (chat): strip prompt_cache_key — models endpoint exposes supported_features/sampling params with no cache key.
+# Cache headers: none
+# Cache policy: automatic prefix cache; cache reads billed per model via input_cache_reads, input_cache_writes 0.
 # Docs: https://api.synthetic.new/openai/v1/models
 name = "Synthetic"
 env = ["SYNTHETIC_API_KEY"]

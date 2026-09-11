@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — no client cache params; router reuses recent models/providers so downstream caches stay warm.
+# Cache key (chat): strip prompt_cache_key — models page documents routing only, no chat cache params.
+# Cache headers: none
+# Cache policy: no client control; router biases to recently used models/providers so downstream caches stay warm.
 # Docs: https://standardcompute.com/models
 # Flat-rate smart-routing gateway: per-token cost is $0 because pricing is
 # subscription-based (flat monthly tiers, https://standardcompute.com/pricing,

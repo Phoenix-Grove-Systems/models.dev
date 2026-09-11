@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — TIMRUN prefix+suffix Subconscious Cache with auto-compaction; chat_template_kwargs opts out.
+# Cache key (chat): strip prompt_cache_key — Cloud API is OpenAI/Anthropic-compatible with no documented cache key; only chat_template_kwargs extension.
+# Cache headers: none
+# Cache policy: TIMRUN prefix+suffix cache; auto-compaction on by default hits automatically, chat_template_kwargs {enable_auto_compaction:false} opts out to manual single-prune mode.
 # Docs: https://docs.subconscious.dev/features/subconscious-cache.md
 name = "Subconscious"
 npm = "@ai-sdk/anthropic"

@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI/Anthropic-compatible subscription gateway, no documented cache params.
+# Cache key (chat): strip prompt_cache_key — Token Plan overview documents OpenAI/Anthropic base URLs with no cache params.
+# Cache headers: none
+# Cache policy: subscription gateway; no client cache control.
 # Docs: https://cloud.tencent.com/document/product/1823/130060
 name = "Tencent Token Plan"
 env = ["TENCENT_TOKEN_PLAN_API_KEY"]

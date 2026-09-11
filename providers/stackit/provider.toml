@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible shared models, no documented cache params.
+# Cache key (chat): strip prompt_cache_key — shared-models page lists only POST /chat/completions with no cache params.
+# Cache headers: none
+# Cache policy: no client cache control; no documented policy to hit.
 # Docs: https://docs.stackit.cloud/products/data-and-ai/ai-model-serving/basics/available-shared-models
 name = "STACKIT"
 env = ["STACKIT_API_KEY"]

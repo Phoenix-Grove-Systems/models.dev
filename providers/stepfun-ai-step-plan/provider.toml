@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — Step Plan chat endpoints share the open-platform automatic prefix cache from 256 tokens.
+# Cache key (chat): strip prompt_cache_key — Step Plan params identical to open platform, which defines no cache key.
+# Cache headers: none
+# Cache policy: shares open-platform automatic prefix cache from 256 tokens; billing consistent with open platform, converted to Step Plan credits.
 # Docs: https://platform.stepfun.ai/docs/en/guides/developer/prompt-cache.md
 name = "StepFun Step Plan (Global)"
 env = ["STEPFUN_API_KEY"]

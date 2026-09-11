@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible InstaGen API, no documented cache params.
+# Cache key (chat): strip prompt_cache_key — InstaGen API reference lists only model/messages endpoints with no cache params.
+# Cache headers: none
+# Cache policy: no client cache control; any server-side prefix reuse is automatic.
 # Docs: https://submodel.gitbook.io/docs/instagen/api-reference
 name = "submodel"
 env = ["SUBMODEL_INSTAGEN_ACCESS_KEY"]
