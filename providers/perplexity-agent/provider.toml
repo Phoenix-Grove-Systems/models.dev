@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — per-model cached-input rates with prefix reuse across multi-turn input replay.
+# Cache key (chat): strip prompt_cache_key — Agent API models page shows per-model cached-input rates but no chat prompt_cache_key body field; API is Responses (POST /v1/agent, alias /v1/responses).
+# Cache headers: none
+# Cache policy: automatic server-side prefix reuse across multi-turn input replay billed at cached-input rates; no chat cache controls to send.
 # Docs: https://docs.perplexity.ai/docs/agent-api/models
 name = "Perplexity Agent"
 env = ["PERPLEXITY_API_KEY"]

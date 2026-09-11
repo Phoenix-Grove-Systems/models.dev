@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — no cache controls, cache usage fields, or cache rates documented on Sonar chat.
+# Cache key (chat): strip prompt_cache_key — Sonar POST /v1/sonar OpenAPI schema lists closed request fields with no prompt_cache_key or cache_control; usage has no cached_tokens.
+# Cache headers: none
+# Cache policy: no documented cache controls, cache usage fields, or cache rates on Sonar chat; do not send key.
 # Docs: https://docs.perplexity.ai/api-reference/sonar-post
 name = "Perplexity"
 env = ["PERPLEXITY_API_KEY"]

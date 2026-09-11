@@ -1,4 +1,6 @@
-# Prompt cache (chat): NATIVE_OTHER — opt-in top-level or per-block cache_control with a moving breakpoint on Anthropic models; no-op elsewhere.
+# Cache key (chat): strip prompt_cache_key — Opper prompt-caching docs define only cache_control top-level or per-block; no prompt_cache_key field documented.
+# Cache headers: none
+# Cache policy: opt-in cache_control Anthropic-only with moving breakpoint (top-level automatic) or up to 4 per-block breakpoints; no-op on OpenAI/Gemini.
 # Docs: https://docs.opper.ai/build/gateway/prompt-caching
 name = "Opper"
 env = ["OPPER_API_KEY"]

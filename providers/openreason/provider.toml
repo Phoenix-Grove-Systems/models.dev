@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — router forwards request fields verbatim to pinned upstream endpoints with no cache controls documented.
+# Cache key (chat): strip prompt_cache_key — router site documents no API field reference, no cache controls, and no prompt_cache_key.
+# Cache headers: none
+# Cache policy: router forwards request fields verbatim to pinned upstream endpoints; no documented cache controls; keep prefix stable.
 # Docs: https://openreason.app
 name = "OpenReason"
 # Sovereignty-aware OpenAI-compatible router across US and EU inference.

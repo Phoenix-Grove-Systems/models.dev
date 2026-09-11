@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic prefix caching by default, plus explicit breakpoints, keys, and TTL controls.
+# Cache key (chat): send prompt_cache_key — OpenAI prompt-caching guide documents optional prompt_cache_key for separate cache accounting; explicit-caching example shows it on Chat Completions.
+# Cache headers: none
+# Cache policy: automatic prefix caching by default; send prompt_cache_key plus prompt_cache_breakpoint / prompt_cache_options mode explicit with TTL 30m on GPT-5.6+ (prompt_cache_retention 24h/in_memory on earlier models).
 # Docs: https://platform.openai.com/docs/guides/prompt-caching
 name = "OpenAI"
 env = ["OPENAI_API_KEY"]

@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — undocumented gateway surface that forwards request fields upstream with no cache controls documented.
+# Cache key (chat): strip prompt_cache_key — undocumented /zen/go/v1 surface; Zen endpoint table documents no cache controls or prompt_cache_key field.
+# Cache headers: none
+# Cache policy: gateway forwards request fields upstream; no documented cache controls; keep prefix stable for upstream reuse.
 # Docs: https://opencode.ai/docs/zen#endpoints
 name = "OpenCode Go"
 env = ["OPENCODE_API_KEY"]

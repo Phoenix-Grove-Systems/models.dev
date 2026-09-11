@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — automatic engine prefix reuse reported via cached_tokens; other standard fields forwarded as-is.
+# Cache key (chat): strip prompt_cache_key — chat-completions reference lists exact body fields with no prompt_cache_key or cache_control; other standard fields forward as-is with model-dependent effect.
+# Cache headers: none
+# Cache policy: automatic engine prefix reuse across follow-up turns reported via usage.prompt_tokens_details.cached_tokens; keep prefix stable, no client key.
 # Docs: https://pendra.ai/docs/api/chat-completions
 # Reasoning HTTP format (accessed 2026-08-24):
 # Pendra exposes an OpenAI-compatible surface and forwards chat-completions

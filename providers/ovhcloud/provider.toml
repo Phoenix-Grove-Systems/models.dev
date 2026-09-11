@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — OpenAI-compatible hosted endpoints with no cache controls or cache pricing documented.
+# Cache key (chat): strip prompt_cache_key — OVH AI Endpoints catalog documents OpenAI-compatible chat/responses with model-specific reasoning only; no cache controls or prompt_cache_key.
+# Cache headers: none
+# Cache policy: hosted endpoints with automatic upstream reuse where available; no client cache controls documented.
 # Docs: https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/gpt-oss-120b/
 name = "OVHcloud AI Endpoints"
 npm = "@ai-sdk/openai-compatible"

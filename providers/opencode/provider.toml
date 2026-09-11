@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — gateway passthrough with per-model cached-read billing and no chat cache controls documented.
+# Cache key (chat): strip prompt_cache_key — Zen docs list endpoints and per-model cached-read pricing but document no chat cache-control or prompt_cache_key field.
+# Cache headers: none
+# Cache policy: gateway passthrough; automatic upstream prefix reuse billed as cached read where available; keep prefix stable, no client key.
 # Docs: https://opencode.ai/docs/zen
 name = "OpenCode Zen"
 env = ["OPENCODE_API_KEY"]
