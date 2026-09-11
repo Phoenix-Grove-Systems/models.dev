@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — unified chat is OpenAI-passthrough with no cache fields; explicit caching lives on the native Anthropic route.
+# Docs: https://neon.com/docs/ai-gateway/chat-completions
 name = "Neon"
 npm = "@ai-sdk/openai-compatible"
 # Unified Chat is POST `/v1/chat/completions`. Native routes are POST

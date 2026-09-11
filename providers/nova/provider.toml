@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — no documented cache fields on the OpenAI-compatible chat API.
+# Docs: https://nova.amazon.com/dev/documentation
 name = "Nova"
 env = ["NOVA_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

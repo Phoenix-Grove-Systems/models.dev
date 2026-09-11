@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — automatic vLLM prefix cache with no request fields; `cached_tokens` usage billed at discounted reads.
+# Docs: https://portal.neuralwatt.com/docs/api/chat-completions
 name = "Neuralwatt"
 env = ["NEURALWATT_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

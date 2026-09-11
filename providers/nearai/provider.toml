@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — gateway accepts cache hints without 400 but may silently drop them; automatic prefix reuse on self-hosted routes.
+# Docs: https://docs.near.ai/cloud/guides/prompt-caching
 name = "NEAR AI Cloud"
 npm = "@ai-sdk/openai-compatible"
 # Gateway and direct TEE hosts use the same POST `/v1/chat/completions` API.

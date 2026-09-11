@@ -1,3 +1,5 @@
+# Prompt cache (chat): REJECTS — per-model closed NIM schema rejects unknown fields with 400.
+# Docs: https://docs.api.nvidia.com/nim/reference/llm-apis
 name = "Nvidia"
 env = ["NVIDIA_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

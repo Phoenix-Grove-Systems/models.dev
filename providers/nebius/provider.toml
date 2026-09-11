@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — generic chat schema permits additional properties; no explicit chat cache controls, caching is automatic server-side.
+# Docs: https://docs.tokenfactory.nebius.com/api-reference/inference/create-chat-completion
 name = "Nebius Token Factory"
 env = ["NEBIUS_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

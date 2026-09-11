@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — implicit auto-cache plus proprietary top-level `caching` / `prompt_caching` controls on chat.
+# Docs: https://docs.nano-gpt.com/api-reference/miscellaneous/prompt-caching
 name = "NanoGPT"
 env = ["NANO_GPT_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

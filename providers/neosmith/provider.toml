@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — no documented cache fields on chat; cache-read billing applied server-side.
+# Docs: https://neosmith.ai/docs
 name = "NeoSmith"
 
 env = ["NEOSMITH_API_KEY"]

@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — automatic implicit caching with transparent passthrough of caching params; explicit Gemini `cachedContents`.
+# Docs: https://ofox.ai/docs/develop/advanced/prompt-caching
 name = "Ofox"
 env = ["OFOX_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
