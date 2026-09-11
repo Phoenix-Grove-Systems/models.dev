@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — self-hosted gateway forwards cache fields upstream with no native chat-cache billing.
+# Cache key (chat): strip prompt_cache_key — self-hosted gateway with no documented chat prompt_cache_key; forwards upstream.
+# Cache headers: none
+# Cache policy: gateway semantic cache plus upstream passthrough; no native chat-cache billing.
 # Docs: https://github.com/Fast-Editor/Lynkr
 name = "Lynkr"
 # Lynkr is a self-hosted gateway: any non-empty API key is accepted locally;

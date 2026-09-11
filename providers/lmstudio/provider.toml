@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — no cache params or cached-token usage in the published chat payloads; local server ignores OpenAI cache fields.
+# Cache key (chat): strip prompt_cache_key — supported payload list is model/top_p/top_k/messages/temperature/max_tokens/stream/stop/penalties/logit_bias/repeat_penalty/seed; no prompt_cache_key.
+# Cache headers: none
+# Cache policy: no chat cache; local server ignores OpenAI cache fields.
 # Docs: https://lmstudio.ai/docs/developer/openai-compat/chat-completions
 # Native POST /api/v1/chat: $.reasoning = "off"|"low"|"medium"|"high"|"on".
 # OpenAI POST /v1/responses: $.reasoning.effort (the example uses "low").

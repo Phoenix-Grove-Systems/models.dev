@@ -1,4 +1,6 @@
-# Prompt cache (chat): SUPPORTS — automatic prefix caching reported via usage.prompt_tokens_details.cached_tokens, with optional prompt_cache_key.
+# Cache key (chat): send prompt_cache_key — accepted on Chat Completions and Responses to route shared prefixes together at scale.
+# Cache headers: none — hits reported via usage.prompt_tokens_details.cached_tokens (chat) and input_tokens_details.cached_tokens (responses).
+# Cache policy: automatic prefix caching; stable content first, optional stable key per shared prefix, never per-user or per-request.
 # Docs: https://dev.meta.ai/docs/prompt-caching.md
 name = "Meta"
 npm = "@ai-sdk/openai"

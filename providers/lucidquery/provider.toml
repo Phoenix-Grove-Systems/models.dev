@@ -1,4 +1,6 @@
-# Prompt cache (chat): TOLERATES — chat API publishes no cache params, cached-token usage, or cached-input rates.
+# Cache key (chat): strip prompt_cache_key — request body is model/messages/max_tokens/temperature/stream/stream_options/response_format/tools/tool_choice; no prompt_cache_key.
+# Cache headers: none — response headers are x-request-id plus ratelimit only.
+# Cache policy: no documented chat prefix cache; usage is prompt/completion/total tokens only.
 # Docs: https://lucidquery.com/docs
 # POST /v1/chat/completions enables a trace with $.thinking = true; aliases are
 # $.include_reasoning and $.reasoning.enabled = true. The published request

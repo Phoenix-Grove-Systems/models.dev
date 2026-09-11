@@ -1,5 +1,7 @@
-# Prompt cache (chat): SUPPORTS — server-side prefix caching billed at a discounted cached-input rate.
-# Docs: https://longcat.chat/platform/docs/pricing/longcat-2.0
+# Cache key (chat): strip prompt_cache_key — chat body is model/messages/stream/max_tokens/temperature/top_p/thinking; no prompt_cache_key despite Cached Input billing.
+# Cache headers: none
+# Cache policy: automatic server-side prefix caching; billed as Cached Input vs Uncached Input.
+# Docs: https://longcat.chat/platform/docs/api/chat
 name = "LongCat"
 npm = "@ai-sdk/openai-compatible"
 api = "https://api.longcat.chat/openai"
