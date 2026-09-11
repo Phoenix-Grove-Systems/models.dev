@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — automatic prefix caching for open models, Anthropic cache_control, OpenAI prompt_cache_retention; no prompt_cache_key field.
+# Docs: https://docs.digitalocean.com/products/inference/how-to/use-prompt-caching/
 name = "DigitalOcean"
 env = ["DIGITALOCEAN_ACCESS_TOKEN"]
 npm = "@ai-sdk/openai-compatible"

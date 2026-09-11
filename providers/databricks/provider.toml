@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — Anthropic-style cache_control breakpoints on Claude-hosted models; no prompt_cache_key field.
+# Docs: https://docs.databricks.com/aws/en/machine-learning/model-serving/score-foundation-models#prompt-cache
 name = "Databricks"
 npm = "@ai-sdk/openai-compatible"
 # Raw Chat is POST `/serving-endpoints/{model}/invocations`: GPT/Gemini 3 use

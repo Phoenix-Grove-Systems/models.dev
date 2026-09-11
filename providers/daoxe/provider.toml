@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible gateway, no documented cache control.
+# Docs: https://daoxe.com/pricing
 # Public model catalog and pricing: https://daoxe.com/pricing
 # OpenAI-compatible API base; GET /models requires a DaoXE API key.
 name = "DaoXE"

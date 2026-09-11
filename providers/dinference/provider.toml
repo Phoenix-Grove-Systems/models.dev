@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible API, no documented cache control.
+# Docs: https://dinference.com/docs
 name = "DInference"
 env = ["DINFERENCE_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

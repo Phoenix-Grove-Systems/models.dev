@@ -1,3 +1,5 @@
+# Prompt cache (chat): SUPPORTS — explicit prompt_cache_key plus automatic prefix caching with prompt_cache_retention.
+# Docs: https://docs.deepinfra.com/chat/prompt-caching
 # Reasoning HTTP format (accessed 2026-06-25):
 # OpenAI Chat: POST https://api.deepinfra.com/v1/openai/chat/completions
 # (also POST /v1/chat/completions). Toggle: reasoning.enabled = true|false;

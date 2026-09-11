@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — automatic on-disk context caching, enabled by default; usage reports prompt_cache_hit_tokens, no prompt_cache_key field.
+# Docs: https://api-docs.deepseek.com/guides/kv_cache
 name = "DeepSeek"
 env = ["DEEPSEEK_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

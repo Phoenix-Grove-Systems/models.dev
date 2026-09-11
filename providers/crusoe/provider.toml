@@ -1,3 +1,5 @@
+# Prompt cache (chat): NATIVE_OTHER — automatic server-side prefix caching via MemoryAlloy cache-aware routing; no prompt_cache_key field.
+# Docs: https://docs.crusoecloud.com/serverless-inference/overview
 name = "Crusoe"
 env = ["CRUSOE_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

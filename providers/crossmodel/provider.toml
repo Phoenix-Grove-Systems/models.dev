@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — OpenAI-compatible gateway, no documented cache control; usage reports cached_tokens.
+# Docs: https://www.crossmodel.ai/docs/api-reference/chat
 # CrossModel is a multi-provider gateway with three inbound surfaces: OpenAI
 # Chat Completions (/v1/chat/completions), OpenAI Responses (/v1/responses), and
 # Anthropic Messages (/v1/messages). Reasoning controls are model-dependent and

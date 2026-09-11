@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — narrow OpenAI-compatible text API, no documented cache control; usage carries no cache fields.
+# Docs: https://echo.tracerml.ai/docs/api
 name = "Echo"
 env = ["ECHO_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
