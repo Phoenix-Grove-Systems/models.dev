@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — Create-Chat-Completions schema is closed (model/messages/tools/reasoning_effort etc.) with no cache key.
+# Cache headers: none
+# Cache policy: automatic prefix cache with per-model Cache Read tier; usage details report cached tokens
+# Docs: https://www.hpc-ai.com/doc/docs/Model-APIs/API-Reference/OpenAI-Compatible-API/Create-Chat-Completions/
 name = "HPC-AI"
 env = ["HPC_AI_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

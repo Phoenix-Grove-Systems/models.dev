@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — Vertex Gemini API has no chat-level cache key; caching is implicit plus explicit cachedContents.
+# Cache headers: none
+# Cache policy: Vertex implicit auto prefix cache plus explicit cachedContents context caching via context-cache API
+# Docs: https://cloud.google.com/vertex-ai/generative-ai/docs/context-cache/context-cache-overview
 name = "Vertex"
 env = ["GOOGLE_VERTEX_PROJECT", "GOOGLE_VERTEX_LOCATION", "GOOGLE_APPLICATION_CREDENTIALS"]
 npm = "@ai-sdk/google-vertex"

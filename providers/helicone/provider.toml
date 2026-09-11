@@ -1,3 +1,7 @@
+# Cache key (chat): send prompt_cache_key — gateway passes it through to providers; maps to Anthropic user_id and controls OpenAI-compatible prefix cache.
+# Cache headers: Helicone-Cache-Enabled (gateway exact-match response cache); Cache-Control max-age, Helicone-Cache-Bucket-Max-Size, Helicone-Cache-Seed
+# Cache policy: Helicone-Cache-Enabled gateway response cache plus provider auto prefix cache (1024+ tokens) and Anthropic cache_control (5min/1h TTL)
+# Docs: https://docs.helicone.ai/gateway/concepts/prompt-caching
 name = "Helicone"
 env = ["HELICONE_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

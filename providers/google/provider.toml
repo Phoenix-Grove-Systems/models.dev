@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — native Gemini API has no chat-level cache key; caching is implicit plus explicit cachedContents.
+# Cache headers: none
+# Cache policy: implicit auto prefix cache (Gemini 2.5+ min 2048 tokens; 3.x min 4096) plus explicit cachedContents context caching; hits via usage.total_cached_tokens
+# Docs: https://ai.google.dev/gemini-api/docs/caching
 name = "Google"
 env = ["GOOGLE_API_KEY", "GOOGLE_GENERATIVE_AI_API_KEY", "GEMINI_API_KEY"]
 npm = "@ai-sdk/google"

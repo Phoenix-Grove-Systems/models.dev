@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — auto-cache exists but body key unsupported on chat per Bifrost dropped-params, Zed #36215, Groq Responses docs.
+# Cache headers: none
+# Cache policy: automatic exact-prefix cache on supported models (gpt-oss-20b/120b), 50% cached-input discount, 2h expiry, usage.prompt_tokens_details.cached_tokens
+# Docs: https://console.groq.com/docs/prompt-caching
 name = "Groq"
 env = ["GROQ_API_KEY"]
 npm = "@ai-sdk/groq"

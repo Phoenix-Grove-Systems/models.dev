@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — platform docs publish Search endpoints only with no raw LLM chat cache params.
+# Cache headers: none
+# Cache policy: no documented prefix-cache policy; usage reports prompt/completion/total tokens only
+# Docs: https://platform.iflow.cn/en/docs
 name = "iFlow"
 env = ["IFLOW_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

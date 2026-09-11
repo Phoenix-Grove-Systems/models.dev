@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — docs state "No parameter, header, or SDK feature: send the same prefix and the discount applies".
+# Cache headers: none
+# Cache policy: automatic repeated-prefix cache with discounted cached-input rates; usage.prompt_tokens_details.cached_tokens
+# Docs: https://docs.greenpt.ai/prompt-caching
 name = "GreenPT"
 npm = "@ai-sdk/openai-compatible"
 api = "https://api.greenpt.ai/v1"
