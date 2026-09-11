@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — LiteLLM-based OpenAI-compatible API with no documented cache controls; membership quota billing, no cache rates.
+# Cache headers: none
+# Cache policy: none documented.
+# Docs: https://nan.builders/docs/getting-started
 # NaN is a builders community that shares dedicated GPUs to serve open-weight models.
 # Access is via LiteLLM with an OpenAI-compatible API at https://api.nan.builders/v1.
 # Membership based (70 EUR/month, plus a 200 EUR/month tier that unlocks glm5.2), so

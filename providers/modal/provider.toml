@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — gateway exposes OpenAI-compatible Chat/Responses/Messages with no Modal-documented cache controls; per-token billing, no cache-key schema.
+# Cache headers: none
+# Cache policy: none documented; upstream-matched prefixes may reuse cache where the backing engine supports it.
+# Docs: https://modal.com/docs/guide/endpoints
 # Modal serves the OpenAI Chat Completions API through its inference gateway.
 # Proxy tokens can be combined as `wk-....ws-...` for bearer authentication.
 # https://modal.com/docs/guide/endpoints

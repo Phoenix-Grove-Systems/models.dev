@@ -1,3 +1,7 @@
+# Cache key (chat): send prompt_cache_key — OpenAPI schema documents top-level prompt_cache_key (session/task id; required for Kimi Code Plan, recommended for multi-turn); hits in usage.cached_tokens.
+# Cache headers: none (X-Msh-Request-Nonce is request-signature only, not cache routing)
+# Cache policy: one stable session/task id per conversation, same value on resume; fixed large context first in messages; prior prompt must exceed 256 tokens to seed cache.
+# Docs: https://platform.moonshot.ai/docs/api/chat
 name = "Moonshot AI"
 env = ["MOONSHOT_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

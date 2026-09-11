@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — byte-forwarding local proxy to upstream GPT/Claude/Gemini with flat per-call billing; no cache controls documented.
+# Cache headers: none
+# Cache policy: none; upstream-matched prefixes may hit upstream cache where supported.
+# Docs: https://github.com/modelishub/modelis-openai
 name = "Modelis"
 npm = "@ai-sdk/openai-compatible"
 env = ["MODELIS_API_KEY"]

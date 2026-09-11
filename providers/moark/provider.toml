@@ -1,3 +1,7 @@
+# Cache key (chat): strip prompt_cache_key — no prompt_cache_key in the documented chat request surface; docs give only positional guidance (static content first) for automatic caching.
+# Cache headers: none
+# Cache policy: automatic only; put reusable fixed content (system instructions) first, dynamic input last.
+# Docs: https://moark.ai/docs/products/apis/texts/text-generation
 # POST /v1/chat/completions is exposed by Moark's raw OpenAPI reference; its
 # request schema documents no toggle, effort, or reasoning-token-budget field.
 # https://moark.com/docs/openapi/v1 (accessed 2026-06-25)
