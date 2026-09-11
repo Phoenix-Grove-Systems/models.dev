@@ -1,3 +1,5 @@
+# Prompt cache (chat): TOLERATES — automatic prefix cache with per-model cached rates; gateway strips unsupported fields instead of rejecting.
+# Docs: https://app.umans.ai/offers/code/docs
 name = "Umans AI"
 env = ["UMANS_AI_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
